@@ -12,7 +12,7 @@ Verify that npm **AND** Node.js are installed
 ` node -v `  
 ` npm -v `  
 
-Within the `/src` directory perform the command  
+Within the */src* directory perform the command  
 ` npm install `  
 
 Finally, run the command  
