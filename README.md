@@ -8,13 +8,12 @@ First clone the repository to the local machine:
 Second if Node.js is not installed the LTS version is availble at:  
 [Node.js Download Site](https://nodejs.org/en/)
 
-Verify that npm **AND** Node.js  
+Verify that npm **AND** Node.js are installed  
 ` node -v `  
 ` npm -v `  
 
 Within the root directory perform the command  
 ` npm install `  
-so that the latest packages can be loaded into the project
 
 Finally, run the command  
 ` npm start `
