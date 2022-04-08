@@ -1,4 +1,37 @@
 {
+    "gui": {
+        "addSpriteButton" : {
+            "idOfLocation" : "renderer",
+            "redirect" : "addSprite.html",
+            "DOMElement" : {
+                "tag" : "input",
+                "id" : "addSpriteButton",
+                "type" : "button",
+                "redirectEvent": "click",
+                "value" : "Add Sprite"
+            }
+        },
+        "addSpriteToQueueButton" : {
+            "idOfLocation" : "controls",
+            "DOMElement" : {
+                "tag" : "input",
+                "id" : "addSpriteToQueueButton",
+                "type" : "button",
+                "event": "click",
+                "value" : "Add Image"
+            }
+        },
+        "uploadSpritesButton" : {
+            "idOfLocation" : "controls",
+            "DOMElement" : {
+                "tag" : "input",
+                "id" : "uploadSpriteToQueueButton",
+                "type" : "button",
+                "event": "click",
+                "value" : "Upload Sprites"
+            }
+        }
+    },
     "renderer" : {
         "idOfLocation" : "renderer",
         "width": 800,
