@@ -4,6 +4,7 @@ fetch("Resources//RenderingSpecs//testSpecs.json")
 
 function init(specs) {
     let gui = specs.gui;
+    let numberOfImages = 0;
 
     let newImageButton = document.createElement(gui.addSpriteToQueueButton.DOMElement.tag);
     newImageButton.setAttribute("id", gui.addSpriteToQueueButton.DOMElement.id);
@@ -17,4 +18,11 @@ function init(specs) {
 
     document.getElementById(gui.addSpriteToQueueButton.idOfLocation).appendChild(newImageButton);
     document.getElementById(gui.uploadSpritesButton.idOfLocation).appendChild(uploadSpritesButton);
+
+    newImageButton.addEventListener(gui.addSpriteToQueueButton.DOMElement.event, (e) => {
+        let newImageElement = document.createElement(gui.imagePreveiw.DOMElement.tag);
+        newImageElement.setAttribute("id", gui.imagePreveiw.DOMElement.tag + numberOfImages++);
+        newImageElement.setAttribute("src", URL.createObjectURL(newImageButton.files[0]));
+        document.getElementById(gui.imagePreveiw.idOfLocation).appendChild(newImageElement);
+    });
 }
