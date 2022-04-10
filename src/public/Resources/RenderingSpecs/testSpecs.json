@@ -16,9 +16,10 @@
             "DOMElement" : {
                 "tag" : "input",
                 "id" : "addSpriteToQueueButton",
-                "type" : "button",
-                "event": "click",
-                "value" : "Add Image"
+                "type" : "file",
+                "event": "change",
+                "value" : "Add Image",
+                "accept" : "image/*"
             }
         },
         "uploadSpritesButton" : {
@@ -29,6 +30,13 @@
                 "type" : "button",
                 "event": "click",
                 "value" : "Upload Sprites"
+            }
+        },
+        "imagePreveiw": {
+            "idOfLocation" : "controls",
+            "DOMElement" : {
+                "tag" : "img",
+                "id" : "preview-img-"
             }
         }
     },
